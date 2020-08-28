@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const scroller = new Scroller('#root');
 
-  document.addEventListener('wheel', scroller.listenScroll)
+  document.addEventListener('wheel', (e) => scroller.listenScroll(e))
 
 
 })
